@@ -75,6 +75,9 @@ class Advanced_Plugin_Admin {
 		 */
 
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/advanced-plugin-admin.css', array(), $this->version, 'all' );
+		wp_enqueue_style( 'bootstrap.min', ADVANCED_PLUGIN_BOOK_URL . 'assets/css/bootstrap.min.css', array(), $this->version, 'all' );
+		wp_enqueue_style( 'dataTables.bootstrap4', ADVANCED_PLUGIN_BOOK_URL . 'assets/css/dataTables.bootstrap4.min.css', array(), $this->version, 'all' );
+		wp_enqueue_style( 'sweetalert.min', ADVANCED_PLUGIN_BOOK_URL . 'assets/css/sweetalert.min.css', array(), $this->version, 'all' );
 
 	}
 
@@ -173,10 +176,10 @@ class Advanced_Plugin_Admin {
 //		echo "</pre>";
 
 		$post_title = $wpdb->get_row(
-			$wpdb->prepare("SELECT * FROM wp_posts WHERE ID = %d",1)
+			$wpdb->prepare( "SELECT * FROM wp_posts WHERE ID = %d", 1 )
 		);
 		echo "<pre>";
-		print_r($post_title);
+		print_r( $post_title );
 		echo "</pre>";
 	}
 

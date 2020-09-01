@@ -64,6 +64,18 @@ class Advanced_Plugin_Activator {
 		(shelf_name,capacity,shelf_location,status) VALUES ('Shelf 1',230,'Corner',1), 
 		('Shelf 2',250,'Center',1), ('Shelf 3',230,'Right Corner',1)";
 		$wpdb->query( $insert_query );
+
+		// create page when plugin active
+		$post_array_data = array(
+			'post_title'   => __( 'Book Tool', 'advanced-plugin' ),
+			'post_name'    => 'book_tool',
+			'post_content' => __( 'Book Tool Page', 'advanced-plugin' ),
+			'post_status'  => 'publish',
+			'post_author'  => 1,
+			'post_type'    => 'page'
+		);
+
+		wp_insert_post( $post_array_data );
 	}
 
 	public function book_table_prefix() {

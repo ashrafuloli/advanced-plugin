@@ -40,6 +40,19 @@ class Advanced_Plugin_Deactivator {
 		global $wpdb;
 		$wpdb->query( "DROP TABLE IF EXISTS " . $this->table_activator->book_table_prefix() );
 		$wpdb->query( "DROP TABLE IF EXISTS " . $this->table_activator->book_table_shelf_prefix() );
+
+		// delete page when plugin deactivate
+
+		$get_data = $wpdb->get_row(
+			$wpdb->prepare( "SELECT ID FROM " . $wpdb->prefix . "posts WHERE post_name = %s", 'book_tool' )
+		);
+
+		$page_id = $get_data->ID;
+
+		if ( $page_id > 0 ) {
+			wp_delete_post( $page_id, true );
+		}
+
 	}
 
 }
