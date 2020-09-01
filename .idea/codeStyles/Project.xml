@@ -1,5 +1,8 @@
 <component name="ProjectCodeStyleConfiguration">
   <code_scheme name="Project" version="173">
+    <MySQLCodeStyleSettings version="2">
+      <option name="USE_GENERIC_STYLE" value="true" />
+    </MySQLCodeStyleSettings>
     <PHPCodeStyleSettings>
       <option name="ALIGN_KEY_VALUE_PAIRS" value="true" />
       <option name="ALIGN_ASSIGNMENTS" value="true" />

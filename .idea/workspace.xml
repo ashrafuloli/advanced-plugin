@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24d62e04-2d72-4e2f-891f-0dc4e2111df9" name="Default Changelist" comment="" />
+    <list default="true" id="24d62e04-2d72-4e2f-891f-0dc4e2111df9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-plugin/admin/class-advanced-plugin-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-plugin/admin/class-advanced-plugin-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-plugin/advanced-plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-plugin/advanced-plugin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-plugin/includes/class-advanced-plugin-activator.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-plugin/includes/class-advanced-plugin-activator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-plugin/includes/class-advanced-plugin-deactivator.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-plugin/includes/class-advanced-plugin-deactivator.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,15 +17,21 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1gQ5BRdfbO8P1q62QoiTpBgY26R" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../wp-project/glee" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -29,6 +42,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -38,7 +52,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598033840048</updated>
-      <workItem from="1598033841162" duration="5772000" />
+      <workItem from="1598033841162" duration="6307000" />
+      <workItem from="1598040216709" duration="166000" />
+      <workItem from="1598165371774" duration="18000" />
+      <workItem from="1598335836508" duration="1920000" />
+      <workItem from="1598992442823" duration="1072000" />
     </task>
     <servers />
   </component>
@@ -46,14 +64,30 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="586" y="198" key="#Inspections" timestamp="1598040303696">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="586" y="198" key="#Inspections/1920.147.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1598040303696" />
+    <state x="336" y="356" key="#SQL_Dialects" timestamp="1598040270242">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="336" y="356" key="#SQL_Dialects/1920.147.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1598040270242" />
     <state x="798" y="445" key="#WordPress" timestamp="1598033890115">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="798" y="445" key="#WordPress/1920.147.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1598033890115" />
-    <state x="257" y="146" width="1500" height="791" key="SettingsEditor" timestamp="1598034251124">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598040167069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="257" y="146" width="1500" height="791" key="SettingsEditor/1920.147.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1598034251124" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.147.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1598040167069" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1598345781989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/1920.147.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1598345781989" />
+    <state x="257" y="146" width="1500" height="791" key="SettingsEditor" timestamp="1598040206657">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="257" y="146" width="1500" height="791" key="SettingsEditor/1920.147.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1598040206657" />
     <state width="600" height="440" key="javadoc.popup" timestamp="1598034318633">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
