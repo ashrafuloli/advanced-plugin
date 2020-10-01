@@ -74,11 +74,17 @@ class Advanced_Plugin_Admin {
 		 * class.
 		 */
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/advanced-plugin-admin.css', array(), $this->version, 'all' );
-		wp_enqueue_style( 'bootstrap.min', ADVANCED_PLUGIN_BOOK_URL . 'assets/css/bootstrap.min.css', array(), $this->version, 'all' );
-		wp_enqueue_style( 'dataTables.bootstrap4', ADVANCED_PLUGIN_BOOK_URL . 'assets/css/dataTables.bootstrap4.min.css', array(), $this->version, 'all' );
-		wp_enqueue_style( 'sweetalert.min', ADVANCED_PLUGIN_BOOK_URL . 'assets/css/sweetalert.min.css', array(), $this->version, 'all' );
+		$valid_page = [ 'book-management', 'create-book', 'list-book' ];
+		$page       = isset( $_REQUEST['page'] ) ? $_REQUEST['page'] : '';
 
+		if ( in_array( $page, $valid_page ) ) {
+			wp_enqueue_style( 'bootstrap.min', ADVANCED_PLUGIN_BOOK_URL . 'assets/css/bootstrap.min.css', array(), $this->version, 'all' );
+			wp_enqueue_style( 'dataTables.bootstrap4', ADVANCED_PLUGIN_BOOK_URL . 'assets/css/dataTables.bootstrap4.min.css', array(), $this->version, 'all' );
+			wp_enqueue_style( 'sweetalert.min', ADVANCED_PLUGIN_BOOK_URL . 'assets/css/sweetalert.min.css', array(), $this->version, 'all' );
+			wp_enqueue_style( $this->plugin_name, ADVANCED_PLUGIN_BOOK_URL . 'admin/css/advanced-plugin-admin.css', array(), $this->version, 'all' );
+		}
+
+//		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/advanced-plugin-admin.css', array(), $this->version, 'all' );
 	}
 
 	/**
@@ -100,7 +106,18 @@ class Advanced_Plugin_Admin {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/advanced-plugin-admin.js', array( 'jquery' ), $this->version, false );
+		$valid_page = [ 'book-management', 'create-book', 'list-book' ];
+		$page       = isset( $_REQUEST['page'] ) ? $_REQUEST['page'] : '';
+
+		if ( in_array( $page, $valid_page ) ) {
+			wp_enqueue_script( 'jquery' );
+			wp_enqueue_script( 'bootstrap', ADVANCED_PLUGIN_BOOK_URL . 'assets/js/bootstrap.min.js', array( 'jquery' ), $this->version, false );
+//			wp_enqueue_script( 'dataTables.bootstrap4', ADVANCED_PLUGIN_BOOK_URL . 'assets/js/dataTables.bootstrap4.min.js', array( 'jquery' ), $this->version, false );
+			wp_enqueue_script( 'jquery.validate', ADVANCED_PLUGIN_BOOK_URL . 'assets/js/jquery.validate.min.js', array( 'jquery' ), $this->version, false );
+			wp_enqueue_script( "sweetalert", ADVANCED_PLUGIN_BOOK_URL . 'assets/js/sweetalert.min.js', array( 'jquery' ), $this->version, false );
+		}
+
+//		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/advanced-plugin-admin.js', array( 'jquery' ), $this->version, false );
 
 	}
 
@@ -184,7 +201,12 @@ class Advanced_Plugin_Admin {
 	}
 
 	public function callback_create_book() {
-		echo "<h2>Create Book</h2>";
+		// echo "<h2>Create Book</h2>";
+		ob_start();
+		include_once (ADVANCED_PLUGIN_BOOK_PATH . "admin/partials/template-book-create.php");
+		$template =  ob_get_contents();
+		ob_end_clean();
+		echo $template;
 	}
 
 	public function callback_list_book() {

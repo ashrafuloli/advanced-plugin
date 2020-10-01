@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24d62e04-2d72-4e2f-891f-0dc4e2111df9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-plugin/admin/class-advanced-plugin-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-plugin/admin/class-advanced-plugin-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-plugin/admin/css/advanced-plugin-admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-plugin/admin/css/advanced-plugin-admin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-plugin/advanced-plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-plugin/advanced-plugin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-plugin/includes/class-advanced-plugin-activator.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-plugin/includes/class-advanced-plugin-activator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/advanced-plugin/includes/class-advanced-plugin-deactivator.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/advanced-plugin/includes/class-advanced-plugin-deactivator.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../wp-project/glee" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -56,7 +55,8 @@
       <workItem from="1598040216709" duration="166000" />
       <workItem from="1598165371774" duration="18000" />
       <workItem from="1598335836508" duration="1920000" />
-      <workItem from="1598992442823" duration="1072000" />
+      <workItem from="1598992442823" duration="1308000" />
+      <workItem from="1601016861790" duration="7379000" />
     </task>
     <servers />
   </component>
@@ -80,10 +80,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.147.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1598040167069" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1598345781989">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1601024619156">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/1920.147.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1598345781989" />
+    <state x="740" y="275" key="FileChooserDialogImpl/1920.170.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1601024619156" />
     <state x="257" y="146" width="1500" height="791" key="SettingsEditor" timestamp="1598040206657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

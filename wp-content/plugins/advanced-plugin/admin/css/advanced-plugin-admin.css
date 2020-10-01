@@ -1,4 +1,15 @@
-/**
- * All of the CSS for your admin-specific functionality should be
- * included in this file.
- */
+.card-wrapper{
+	padding: 0;
+	max-width: 100%;
+}
+
+.from-wrapper label{
+	margin-bottom: 0;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+.from-wrapper .form-group{
+	margin-bottom: 0;
+}
